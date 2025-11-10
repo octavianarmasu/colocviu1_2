@@ -18,11 +18,10 @@
             android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/edit_text"
+                    android:id="@+id/next_term"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:inputType="number"
                     android:gravity="center" />
 
             <Button
@@ -38,15 +37,20 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp">
+        android:paddingTop="20dp">]
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
     <EditText
-        android:id="@+id/right_edit_text"
+        android:id="@+id/all_terms"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:enabled="false"
         android:inputType="number"
         android:gravity="center" />
+    </LinearLayout>
     </LinearLayout>
 
     <Button
