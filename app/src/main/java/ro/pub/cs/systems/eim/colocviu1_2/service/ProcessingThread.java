@@ -36,6 +36,7 @@ public class ProcessingThread extends Thread {
         intent.setAction(Colocviu1_2MainActivity.Constants.ACTION);
         intent.setPackage("ro.pub.cs.systems.eim.colocviu1_2");
         intent.putExtra(Colocviu1_2MainActivity.Constants.SENT,new Date(System.currentTimeMillis()) + "BROADCAST SENT WITH VALUE: " + sum);
+        intent.putExtra(Colocviu1_2MainActivity.Constants.SUM, sum);
         Log.d("COLOCVIU",new Date(System.currentTimeMillis()) + "BROADCAST SENT WITH VALUE: " + sum);
         context.sendBroadcast(intent);
 

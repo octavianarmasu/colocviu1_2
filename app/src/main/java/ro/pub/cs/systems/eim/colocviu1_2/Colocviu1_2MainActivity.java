@@ -43,10 +43,16 @@ public class Colocviu1_2MainActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-            int data = intent.getIntExtra(Constants.SENT, 0);
+            int data = intent.getIntExtra(Constants.SUM, 0);
             Log.d(Constants.SENT, "Received broadcast: " + action + " -> " + data);
+            showMessage(data);
         }
 
+
+    }
+
+    private void showMessage(int data) {
+        Toast.makeText(this, "Message Received and sum is: " + data, Toast.LENGTH_LONG).show();
     }
 
     private ButtonClickListener buttonClickListener = new ButtonClickListener();
